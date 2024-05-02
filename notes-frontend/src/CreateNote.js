@@ -9,8 +9,8 @@ const CreateNote = ({ onCreateSuccess }) => {
     e.preventDefault();
     try {
       await axios.post('http://localhost:8000/api/notes/', { title, content });
-      onCreateSuccess(); // Call onCreateSuccess function to display success message
-      setTitle(''); // Clear form fields after successful creation
+      onCreateSuccess(); 
+      setTitle(''); 
       setContent('');
     } catch (error) {
       console.error('Error creating note:', error);

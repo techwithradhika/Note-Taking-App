@@ -7,8 +7,8 @@ const NoteDetail = () => {
   const [editMode, setEditMode] = useState(false);
   const [editedTitle, setEditedTitle] = useState('');
   const [editedContent, setEditedContent] = useState('');
-  const [editSuccess, setEditSuccess] = useState(false); // State for edit success message
-  const [deleteSuccess, setDeleteSuccess] = useState(false); // State for delete success message
+  const [editSuccess, setEditSuccess] = useState(false); 
+  const [deleteSuccess, setDeleteSuccess] = useState(false); 
   const { id } = useParams();
 
   useEffect(() => {
@@ -40,7 +40,7 @@ const NoteDetail = () => {
         title: editedTitle,
         content: editedContent
       });
-      setEditSuccess(true); // Set edit success message
+      setEditSuccess(true); 
       axios.get(`http://localhost:8000/api/notes/${id}/`)
         .then(response => {
           setNote(response.data);
@@ -57,7 +57,7 @@ const NoteDetail = () => {
   const handleDelete = async () => {
     try {
       await axios.delete(`http://localhost:8000/api/notes/${id}/`);
-      setDeleteSuccess(true); // Set delete success message
+      setDeleteSuccess(true);
     } catch (error) {
       console.error('Error deleting note:', error);
     }
@@ -91,7 +91,7 @@ const NoteDetail = () => {
               <div style={{ display: 'flex', gap: '10px' }}>
                 <button type="submit">Save</button>
                 <button type="button" onClick={handleCancelEdit}>Cancel</button>
-                <button type="button" onClick={handleDelete}>Delete</button> {/* Delete button */}
+                <button type="button" onClick={handleDelete}>Delete</button>
               </div>
             </form>
           ) : (
@@ -101,8 +101,8 @@ const NoteDetail = () => {
               <button onClick={handleEdit}>Edit</button>
             </div>
           )}
-          {editSuccess && <p>Note edited successfully!</p>} {/* Edit success message */}
-          {deleteSuccess && <p>Note deleted successfully!</p>} {/* Delete success message */}
+          {editSuccess && <p>Note edited successfully!</p>}
+          {deleteSuccess && <p>Note deleted successfully!</p>}
         </div>
       ) : (
         <p>Loading...</p>

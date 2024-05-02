@@ -5,13 +5,13 @@ import NoteDetail from './NoteDetail';
 import CreateNote from './CreateNote';
 
 const App = () => {
-  const [createSuccess, setCreateSuccess] = useState(false); // State for create success message
+  const [createSuccess, setCreateSuccess] = useState(false);
 
   const handleCreateSuccess = () => {
     setCreateSuccess(true);
     setTimeout(() => {
       setCreateSuccess(false);
-    }, 3000); // Hide message after 3 seconds
+    }, 3000);
   };
 
   return (
