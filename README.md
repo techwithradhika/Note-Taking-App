@@ -34,10 +34,21 @@ To run this application locally, follow these steps:
     python3 -m venv venv
     source venv/bin/activate
 4. Install Django and other backend dependencies: pip install -r requirements.txt
-5. Apply migrations to create database tables:
+5. Update the database settings in notes_project/settings.py:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'notes',  
+            'USER': 'postgres',         # With your Database username
+            'PASSWORD': '1234',     # With your Database password
+            'HOST': 'localhost',    # With your Database host
+            'PORT': '5432',     # With your Database part
+        }
+    }
+6. Apply migrations to create database tables:
     python manage.py makemigrations
     python manage.py migrate
-6. Run the Django server: python manage.py runserver
-7. Open another terminal and navigate to the backend directory: cd notes-frontend
-8. Install dependencies: npm install
-9. Run the frontend: npm start and Access the application in your browser at http://localhost:3000/.
+7. Run the Django server: python manage.py runserver
+8. Open another terminal and navigate to the backend directory: cd notes-frontend
+9. Install dependencies: npm install
+10. Run the frontend: npm start and Access the application in your browser at http://localhost:3000/.
