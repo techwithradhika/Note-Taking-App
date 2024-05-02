@@ -50,4 +50,5 @@ To run this application locally, follow these steps:
 9. Run the Django server: python manage.py runserver
 10. Open another terminal and navigate to the frontend directory: cd notes-frontend
 11. Install dependencies: npm install
-12. Run the frontend: npm start and Access the application in your browser at http://localhost:3000/.
+12. Run the frontend: npm start
+13. Access the application in your browser at http://localhost:3000/.
