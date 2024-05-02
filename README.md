@@ -30,10 +30,11 @@ To run this application locally, follow these steps:
 
 1. Clone the repository: git clone https://github.com/techwithradhika/Note-Taking-App.git
 2. Navigate to the backend project directory: cd notes_project
-3. Create a virtual environment (recommended): python3 -m venv venv
-4. Activate the virtual environment: source venv/bin/activate
-5. Install Django and other backend dependencies: pip install -r requirements.txt
-6. Update the database settings in notes_project/settings.py:
+3. Install virtual environment (recommended): pip install virtualenv
+4. Create a virtual environment: python -m virtualenv venv.
+5. Activate the virtual environment: .\venv\Scripts\activate
+6. Install Django and other backend dependencies: pip install -r requirements.txt
+7. Update the database settings in notes_project/settings.py:
    - DATABASES = {
    -    'default': {
     -    'ENGINE': 'django.db.backends.postgresql',
@@ -43,10 +44,10 @@ To run this application locally, follow these steps:
     -        'HOST': 'localhost',    # With your Database host
     -        'PORT': '5432',     # With your Database part
     -    }}
-7. Apply migrations to create database tables:
+8. Apply migrations to create database tables:
    - python manage.py makemigrations
    - python manage.py migrate
-8. Run the Django server: python manage.py runserver
-9. Open another terminal and navigate to the frontend directory: cd notes-frontend
-10. Install dependencies: npm install
-11. Run the frontend: npm start and Access the application in your browser at http://localhost:3000/.
+9. Run the Django server: python manage.py runserver
+10. Open another terminal and navigate to the frontend directory: cd notes-frontend
+11. Install dependencies: npm install
+12. Run the frontend: npm start and Access the application in your browser at http://localhost:3000/.
