@@ -38,11 +38,11 @@ To run this application locally, follow these steps:
    - DATABASES = {
    -    'default': {
     -    'ENGINE': 'django.db.backends.postgresql',
-    -        'NAME': 'notes',  
-    -        'USER': 'postgres',     # With your Database username
-    -        'PASSWORD': '1234',     # With your Database password
-    -        'HOST': 'localhost',    # With your Database host
-    -        'PORT': '5432',     # With your Database part
+    -        'NAME': 'notes',        # Replace "notes" with your Databasee name or create a database with the same name.
+    -        'USER': 'postgres',     # Replace "postgres" with your Database username.
+    -        'PASSWORD': 'abc123',     # Replace "abc123" with your Database password.
+    -        'HOST': 'localhost',    # Replace "localhost" with your Database host.
+    -        'PORT': '5432',     # Replace "5432" with your Database port.
     -    }}
 8. Apply migrations to create database tables:
    - python manage.py makemigrations
