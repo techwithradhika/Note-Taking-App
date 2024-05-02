@@ -4,10 +4,10 @@ This is a simple Note Taking App built with React.js and Django. It allows users
 
 # Prerequisites
 
-Visual Studio Code.
-Python and pip installed.
-Node.js and npm installed.
-PostgreSQL database installed.
+- Visual Studio Code.
+- Python and pip installed.
+- Node.js and npm installed.
+- PostgreSQL database installed.
 
 ## Features
 
