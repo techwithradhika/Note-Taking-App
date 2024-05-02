@@ -12,7 +12,8 @@ PostgreSQL database installed.
 ## Features
 
 - **Create New Note:** Users can create new notes by providing a title and content for the note.
-- **View Note:** Users can view the details of a note, including its title and content.
+- **Notes list:** list of notes showing titles.
+- **View Note:** Users can view the details of a note, including its title and content by clicking on a note title.
 - **Edit Note:** Users can edit the title and content of a note.
 - **Delete Note:** Users can delete a note.
 - **Success Messages:** Success messages are displayed when a note is created, edited, or deleted.
